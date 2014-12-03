@@ -1,0 +1,44 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="WindowsPhoneRC.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape" Orientation="Landscape"
+    shell:SystemTray.IsVisible="True">
+
+    <phone:PhoneApplicationPage.Resources>
+        <!-- Images -->
+        <BitmapImage x:Key="UP_ACTIVE" UriSource="Assets/up_active.png" />
+        <BitmapImage x:Key="RIGHT_ACTIVE" UriSource="Assets/right_active.png" />
+        <BitmapImage x:Key="LEFT_ACTIVE" UriSource="Assets/left_active.png" />
+        <BitmapImage x:Key="DOWN_ACTIVE" UriSource="Assets/down_active.png" />
+
+        <BitmapImage x:Key="UP_INACTIVE" UriSource="Assets/up_inactive.png" />
+        <BitmapImage x:Key="RIGHT_INACTIVE" UriSource="Assets/right_inactive.png" />
+        <BitmapImage x:Key="LEFT_INACTIVE" UriSource="Assets/left_inactive.png" />
+        <BitmapImage x:Key="DOWN_INACTIVE" UriSource="Assets/down_inactive.png" />
+
+    </phone:PhoneApplicationPage.Resources>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Button Name="ConnectAppToDeviceButton" Click="ConnectAppToDeviceButton_Click_1" Width="200" Height="100" Content="Connect" Margin="30,10,498,370"/>
+        <TextBox x:Name="DeviceName" HorizontalAlignment="Left" Height="72" Margin="235,25,0,0" TextWrapping="Wrap" Text="Adafruit EZ-Link 1bdf" VerticalAlignment="Top" Width="460"/>
+        <Button Name="ShutdownDeviceButton" Click="ShutdownDeviceButton_Click_1"  Width="200" Height="100" Content="Shutdown Car" Margin="30,93,498,287"/>
+
+        <TextBlock x:Name="StatusPane" HorizontalAlignment="Left" Margin="30,401,0,0" TextWrapping="Wrap" Text="No body detected" VerticalAlignment="Top" Width="665" FontSize="36" TextAlignment="Center"/>
+        <Image x:Name="UP_IMAGE" HorizontalAlignment="Left" Height="100" Margin="316,98,0,0" VerticalAlignment="Top" Width="100" Source="Assets/up_inactive.png"/>
+        <Image x:Name="DOWN_IMAGE" HorizontalAlignment="Left" Height="100" Margin="316,303,0,0" VerticalAlignment="Top" Width="100" Source="Assets/down_inactive.png"/>
+        <Image x:Name="RIGHT_IMAGE" HorizontalAlignment="Left" Height="100" Margin="421,198,0,0" VerticalAlignment="Top" Width="100" Source="Assets/right_inactive.png"/>
+        <Image x:Name="LEFT_IMAGE" HorizontalAlignment="Left" Height="100" Margin="211,198,0,0" VerticalAlignment="Top" Width="100" Source="Assets/left_inactive.png"/>
+
+    </Grid>
+
+</phone:PhoneApplicationPage>
