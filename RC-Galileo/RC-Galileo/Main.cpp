@@ -14,7 +14,7 @@ const int OUT_RIGHT = 10;
 const int OUT_UP = 6;
 const int OUT_LEFT = 11;
 const int OUT_DOWN = 5;
-const int OUT_READY = 2;
+const int OUT_READY = 4;
 
 //define command buffers
 char * command;
