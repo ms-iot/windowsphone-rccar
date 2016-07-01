@@ -65,3 +65,8 @@ You can see we've just structured the commands to the robot as simple strings, w
 [Adafruit EZ-Link Bluetooth Serial Tutorial](https://learn.adafruit.com/introducing-bluefruit-ez-link/overview)
 
 [Nokia's Developer Wiki: Communicating with an Arduino over Bluetooth](http://developer.nokia.com/community/wiki/Windows_Phone_8_communicating_with_Arduino_using_Bluetooth)
+
+
+===
+
+This project has adopted the [Microsoft Open Source Code of Conduct](http://microsoft.github.io/codeofconduct). For more information see the [Code of Conduct FAQ](http://microsoft.github.io/codeofconduct/faq.md) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments. 
